@@ -1,3 +1,5 @@
+import time
+
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 
@@ -17,5 +19,11 @@ driver.find_element(By.XPATH, "//button[@type='submit']").click()
 driver.find_element(By.CLASS_NAME, "oxd-userdropdown-tab").click()
 
 driver.find_element(By.LINK_TEXT, "Logout").click()
+
+time.sleep(5)
+
+driver.back()
+
+time.sleep(10)
 
 driver.close()
