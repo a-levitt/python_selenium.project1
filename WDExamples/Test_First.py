@@ -1,0 +1,1 @@
+print("Print test message")
